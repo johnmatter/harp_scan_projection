@@ -14,8 +14,8 @@ except ValueError:
 deltaSigmax = (IHA3H07Bsigmax-IHA3H07Asigmax)
 
 # In meters
-distanceFromAtoTarget = 2.9521
-distanceFromBtoTarget = 1.5468
+distanceFromAtoTarget = 295.097
+distanceFromBtoTarget = 154.659
 distanceBetweenHarps = distanceFromAtoTarget - distanceFromBtoTarget
 
 # Project to target
