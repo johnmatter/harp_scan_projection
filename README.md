@@ -14,6 +14,7 @@ If we have a wide beam, we need the raster to be smaller.
 If we have a narrow beam, we can accept a wider raster.
 
 The rule of thumb we established on Jan 23rd, 2020 is as follows:
+
 | Beam width at target (mm) | Raster diameter (mm)  |
 | ------------------------- | --------------------- |
 | < 0.300                   | 5.0                   |
@@ -44,5 +45,7 @@ Request a raster diameter of 4.00 mm
 
 ### [citation needed]
 [1] https://logbooks.jlab.org/entry/3768482
+
 [2] https://hallcweb.jlab.org/elogs/Commissioning+Experiments+Analysis/34
+
 [3] https://logbooks.jlab.org/entry/3751286
