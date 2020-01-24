@@ -41,8 +41,9 @@ print("Beam width projected to target (both harps should match)")
 print("From IHA3H07A: %.4f" % targetProjectedFromA)
 print("From IHA3H07B: %.4f" % targetProjectedFromB)
 print("")
-print("Raster insructions: ")
 if goodWidth:
-    print("Request a raster diameter of %0.2f mm" % rasterDiameter)
+    print("Based on harp projected size at the target, recommend")
+    print("using a %0.2f mm raster diameter. (Please confirm with RC!)" % rasterDiameter)
 else:
     print("Request a smaller width from MCC.")
+print("")
