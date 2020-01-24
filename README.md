@@ -4,16 +4,30 @@ the halo doesn't hit the target cell wall. We do this by projecting the
 width to the target, and choosing an appropriate raster size for that width.
 
 As in Simona's entry [1] using distances Dave Gaskell sent me [2], we can
-project the beam width from each the harps to the target as follows:
+project the beam width from each of the harps to the target as follows:
 
-width at target (using 3H07X) = width(3H07X) + 1.55 * [width(3H07B) - width(3H07A)]/1.41
+width at target (using 3H07B) = width(3H07B) + 1.55 * [width(3H07B) - width(3H07A)]/1.41
+
 width at target (using 3H07A) = width(3H07A) + 2.95 * [width(3H07B) - width(3H07A)]/1.41
 
 ### Choosing a raster diameter
-If we have a wide beam, we need the raster to be smaller.
-If we have a narrow beam, we can accept a wider raster.
+The distribution of beam electrons incident on the target cell is determined by
+the intrinstic beam size and the circular raster's diameter.
 
-The rule of thumb we established on Jan 23rd, 2020 is as follows:
+![raster_and_beam_width](raster_and_beam_width.png)
+
+For a cryo target, the raster needs to be large enough to prevent LH2, LHe3,
+etc. from boiling. The polarized 3He target does not have this concern. We
+just need to make sure to keep the beam within the center of the window.
+To prevent the beam halo from hitting the outer wall of the cell (which could
+damage it, create extra background, etc.), we need to set an appropriate raster
+given the width measured in harp scans.
+
+If we have a narrow beam, we can accept a wider raster.
+If we have a wide beam, we need the raster to be smaller.
+
+A more principled calculation is possible, but the rule of thumb we
+established on Jan 23rd, 2020 is as follows:
 
 | Beam width at target (mm) | Raster diameter (mm)  |
 | ------------------------- | --------------------- |
@@ -31,7 +45,14 @@ The y width has tended to be pretty narrow, so we're mainly concerned with x.
 ![harps](both_harps.png)
 
 ### Example usage
-```~/a1n_project_beam_width$ ./project_beam_to_target.py
+When you run this script, it will ask you to input the instrinsic beam widths
+from both harps. Then it will output the width projected to the target
+as well as the corresponding raster to request from MCC. I recommend you post
+an HCLOG entry with links to the harp scans as well as the info output
+by this script.
+
+```
+~/a1n_project_beam_width$ ./project_beam_to_target.py
 Width at IHA3H07A in mm: 0.3267
 Width at IHA3H07B in mm: 0.3807
 
