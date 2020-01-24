@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python3
 import sys
 
 IHA3H07Asigmax = input("Width at IHA3H07A in mm: ")
