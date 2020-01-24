@@ -46,10 +46,10 @@ The y width has tended to be pretty narrow, so we're mainly concerned with x.
 
 ### Example usage
 When you run this script, it will ask you to input the instrinsic beam widths
-from both harps. Then it will output the width projected to the target
-as well as the corresponding raster to request from MCC. I recommend you post
-an HCLOG entry with links to the harp scans as well as the info output
-by this script.
+from both harps. These should either be both x widths or both y widths.
+Then it will output the width projected to the target as well as the
+corresponding raster to request from MCC. I recommend you post an HCLOG entry
+with links to the harp scans as well as the info output by this script.
 
 ```
 ~/a1n_project_beam_width$ ./project_beam_to_target.py
