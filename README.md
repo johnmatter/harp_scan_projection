@@ -60,8 +60,8 @@ Beam width projected to target (both harps should match)
 From IHA3H07A: 0.4401
 From IHA3H07B: 0.4401
 
-Raster insructions:
-Request a raster diameter of 4.00 mm
+Based on harp projected size at the target, recommend
+using a 4.00 mm raster diameter. (Please confirm with RC!)
 ```
 
 ### [citation needed]
