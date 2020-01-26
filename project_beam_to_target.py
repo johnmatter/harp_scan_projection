@@ -66,7 +66,7 @@ print("Y: %.4f" % targetProjectedFromASigmaY)
 print("X: %.4f" % targetProjectedFromASigmaX)
 print("")
 if goodWidth:
-    print("Based on harp-projected width at the target, recommend using a %0.2f mm raster diameter." % rasterDiameter)
+    print("Based on projected width at the target, recommend using a %0.2f mm raster diameter." % rasterDiameter)
     print("(Please confirm with RC!)")
 else:
     print("Request a smaller width from MCC.")
