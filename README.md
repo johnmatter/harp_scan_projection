@@ -52,16 +52,24 @@ corresponding raster to request from MCC. I recommend you post an HCLOG entry
 with links to the harp scans as well as the info output by this script.
 
 ```
-~/a1n_project_beam_width$ ./project_beam_to_target.py
-Width at IHA3H07A in mm: 0.3267
-Width at IHA3H07B in mm: 0.3807
+[cdaq@hcdesk1 harp_scan_projection]$ harp_project_to_target
 
-Beam width projected to target (both harps should match)
-From IHA3H07A: 0.4401
-From IHA3H07B: 0.4401
+Please input the following information from the harp scans in mm
 
-Based on harp projected size at the target, recommend
-using a 4.00 mm raster diameter. (Please confirm with RC!)
+IHA3H07A, peak 2 sigma: .3821
+IHA3H07A, peak 3 sigma: .3267
+IHA3H07B, peak 2 sigma: .3575
+IHA3H07B, peak 3 sigma: .3807
+
+Beam width projected to target
+Y: 0.3304
+X: 0.4402
+
+Based on projected width at the target, recommend using a 4.00 mm raster diameter.
+(Please confirm with RC!)
+
+[git:master]
+[cdaq@hcdesk1 harp_scan_projection]$ 
 ```
 
 ### [citation needed]
