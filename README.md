@@ -6,9 +6,10 @@ width to the target, and choosing an appropriate raster size for that width.
 As in Simona's entry [1] using distances Dave Gaskell sent me [2], we can
 project the beam width from each of the harps to the target as follows:
 
+```
 width at target (using 3H07B) = width(3H07B) + 1.55 * [width(3H07B) - width(3H07A)]/1.41
-
 width at target (using 3H07A) = width(3H07A) + 2.95 * [width(3H07B) - width(3H07A)]/1.41
+```
 
 ### Choosing a raster diameter
 The distribution of beam electrons incident on the target cell is determined by
