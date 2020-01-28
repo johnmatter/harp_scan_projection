@@ -49,7 +49,7 @@ else:
 # Determine appropriate rasterDiameter size
 goodWidth = True
 widthInMicrons = int(wideSigma*1e3)
-if widthInMicrons > 500:
+if widthInMicrons >= 500:
     goodWidth = False
     rasterDiameter = -1
 if widthInMicrons in range(400,500):
@@ -69,5 +69,5 @@ if goodWidth:
     print("Based on projected width at the target, recommend using a %0.2f mm raster diameter." % rasterDiameter)
     print("(Please confirm with RC!)")
 else:
-    print("Request a smaller width from MCC.")
+    print("Request a narrower beam from MCC.")
 print("")
